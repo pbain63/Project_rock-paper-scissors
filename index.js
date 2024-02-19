@@ -1,4 +1,3 @@
-
 arrayOfChoices = ["Rock", "Paper", "Scissors"];
 //1.3.create function that'll return random either ‘Rock’,
 //‘Paper’ or ‘Scissors’.
@@ -58,30 +57,26 @@ function playRound(playerSelection, computerSelection) {
   return;
 }
 
-//3.6. create new function called playGame(). Use the
+//3.6. Create for loop. Use the
 //previous function inside of this one to play a five
 //round game that keeps score and reports a winner or
 //loser at the end.
-function playGame() {
-  for (let i = 0; i < 5; i++) {
-    const userChoice = prompt(
-      "Type any word from the 'Rock', 'Paper', 'Scissors' to play: "
-    );
 
-    const playerSelection =
-      userChoice[0].toUpperCase() + userChoice.slice(1).toLowerCase();
-    console.log("You selected: " + playerSelection);
+for (let i = 0; i < 5; i++) {
+  const userChoice = prompt(
+    "Type any word from the 'Rock', 'Paper', 'Scissors' to play: "
+  );
 
-    const computerSelection = getComputerChoice();
-    console.log("Computer selected: " + computerSelection);
+  const playerSelection =
+    userChoice[0].toUpperCase() + userChoice.slice(1).toLowerCase();
+  console.log("You selected: " + playerSelection);
 
-    console.log(
-      "Play round result = " + playRound(playerSelection, computerSelection)
-    );
-    console.log("After round " + i + ". Your Score = " + userScore);
-    console.log("After round " + i + ". Computer's Score = " + computerScore);
-  }
-  return;
+  const computerSelection = getComputerChoice();
+  console.log("Computer selected: " + computerSelection);
+
+  console.log(
+    "Play round result = " + playRound(playerSelection, computerSelection)
+  );
+  console.log("After round " + i + ". Your Score = " + userScore);
+  console.log("After round " + i + ". Computer's Score = " + computerScore);
 }
-
-playGame();
