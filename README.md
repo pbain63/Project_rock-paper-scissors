@@ -1,5 +1,5 @@
 # Project_rock-paper-scissors
-A HTML5, JavaScript based project. 
+The project takes input "Five" times in a "prompt()", keeps the score from the begining and shows "Your Score" and "Computer's Score". 
 
 After entering input "Five" times, to see the result please go to your browser console. 
 
