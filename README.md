@@ -5,7 +5,8 @@ After entering input "Five" times, to see the result please go to your browser c
 
 Live Preview:
 
-https://rawcdn.githack.com/pbain63/Project_rock-paper-scissors/34ae258975a642ef8a5368b17d37c6d1883aaeea/index.html
+
+https://rawcdn.githack.com/pbain63/Project_rock-paper-scissors/cfc0e26529b350ba60e4b730a39fc732d40afc6b/index.html
 
 
 
