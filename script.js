@@ -32,8 +32,7 @@ container.appendChild(resultDiv);
 //--
 
 arrayOfChoices = ["Rock", "Paper", "Scissors"];
-//1.3.create function that'll return random either ‘Rock’,
-//‘Paper’ or ‘Scissors’.
+
 function getComputerChoice() {
   let randomChoice = Math.floor(Math.random() * 3);
 
@@ -42,17 +41,12 @@ function getComputerChoice() {
   return choiceOfComputer;
 }
 getComputerChoice();
-//console.log(getComputerChoice()); /*return output but not same
+//console.log(getComputerChoice());
 
 let userScore = parseInt(0);
 let computerScore = parseInt(0);
 
-//2.4. write a function take two parameters - the
-//playerSelection and computerSelection - and then
-//return a string that declares the winner or tie
-//of the round like so: "You Lose! Paper beats Rock"
 function playRound(playerSelection, computerSelection) {
-  //let playerSelection=ROCK
   if (playerSelection === "Rock" && computerSelection === "Paper") {
     computerScore++;
     return "You Lose! Paper beats Rock";
@@ -61,10 +55,7 @@ function playRound(playerSelection, computerSelection) {
     return "You Win! Rock beats Scissors";
   } else if (playerSelection === "Rock" && computerSelection === "Rock") {
     return "It's a Draw! Let's play again";
-  }
-
-  //let playerSelection=Paper
-  else if (playerSelection === "Paper" && computerSelection === "Paper") {
+  } else if (playerSelection === "Paper" && computerSelection === "Paper") {
     return "It's a Draw! Let's play again";
   } else if (playerSelection === "Paper" && computerSelection === "Scissors") {
     computerScore++;
@@ -72,10 +63,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection === "Paper" && computerSelection === "Rock") {
     userScore++;
     return "You Win! Rock beats Paper";
-  }
-
-  //let playerSelection=Scissors
-  else if (playerSelection === "Scissors" && computerSelection === "Paper") {
+  } else if (playerSelection === "Scissors" && computerSelection === "Paper") {
     userScore++;
     return "You Win! Scissors beat Paper";
   } else if (
@@ -89,10 +77,6 @@ function playRound(playerSelection, computerSelection) {
   }
   return;
 }
-
-//3.6.to play a five
-//round game that keeps score and reports a winner or
-//loser at the end.
 
 for (let i = 0; i < 5; i++) {
   const userChoice = prompt(
