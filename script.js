@@ -1,3 +1,36 @@
+const container = document.createElement("div");
+const btnRock = document.createElement("button");
+const btnPaper = document.createElement("button");
+const btnScissors = document.createElement("button");
+const resultDiv = document.createElement("div");
+
+//container.classList.add("container");
+container.setAttribute("id", "container");
+btnRock.setAttribute("id", "rock");
+btnPaper.setAttribute("id", "paper");
+btnScissors.setAttribute("id", "scissors");
+resultDiv.setAttribute("id", "result");
+
+container.textContent = "To Play, please click any button: ";
+btnRock.textContent = "Rock";
+btnPaper.textContent = "Paper";
+btnScissors.textContent = "Scissors";
+
+resultDiv.textContent = `Running Score: () ;
+ () reach to the 5 points. () Wins!`;
+
+btnRock.setAttribute("style", "margin: 10px; background-color: grey");
+btnPaper.setAttribute("style", "margin: 10px; background-color: white");
+btnScissors.setAttribute("style", "margin: 10px; background-color: silver");
+
+document.body.appendChild(container);
+container.appendChild(btnRock);
+container.appendChild(btnPaper);
+container.appendChild(btnScissors);
+container.appendChild(resultDiv);
+
+//--
+
 arrayOfChoices = ["Rock", "Paper", "Scissors"];
 //1.3.create function that'll return random either ‘Rock’,
 //‘Paper’ or ‘Scissors’.
