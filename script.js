@@ -33,3 +33,85 @@ const scissorsClick = document.querySelector("#Scissors");
 rockClick.addEventListener("click", userChoice);
 paperClick.addEventListener("click", userChoice);
 scissorsClick.addEventListener("click", userChoice);
+
+function userChoice(event) {
+  let playerSelection = event.target.id;
+
+  let computerSelection = getComputerChoice();
+
+  let runningResult = playRound(playerSelection, computerSelection);
+
+  while (playerScore <= 5 && computerScore <= 5) {
+    if (playerScore === 5 || computerScore === 5) {
+      resultDiv.textContent = `Game Over :   ${winGame()} `;
+    } else {
+      resultDiv.textContent = `Player Selected = { ${playerSelection} } ; 
+      Computer Selected = { ${computerSelection} } ;
+      Running Result =   ${runningResult} ; 
+      Player Score: [ ${playerScore} ] ;  
+      Computer Score:  [ ${computerScore} ] `;
+    }
+
+    break;
+  }
+}
+
+let arrayOfChoices = ["Rock", "Paper", "Scissors"];
+
+function getComputerChoice() {
+  let randomChoice = Math.floor(Math.random() * 3);
+
+  let choiceOfComputer = arrayOfChoices[randomChoice];
+
+  return choiceOfComputer;
+}
+
+let playerScore = parseInt(0);
+let computerScore = parseInt(0);
+
+function playRound(playerSelection, computerSelection) {
+  if (playerSelection === "Rock" && computerSelection === "Paper") {
+    computerScore++;
+
+    return "You Lose! Paper beats Rock";
+  } else if (playerSelection === "Rock" && computerSelection === "Scissors") {
+    playerScore++;
+
+    return "You Win! Rock beats Scissors";
+  } else if (playerSelection === "Rock" && computerSelection === "Rock") {
+    return "It's a Draw! Let's play again";
+  } else if (playerSelection === "Paper" && computerSelection === "Paper") {
+    return "It's a Draw! Let's play again";
+  } else if (playerSelection === "Paper" && computerSelection === "Scissors") {
+    computerScore++;
+
+    return "You Lose! Scissors beat Paper";
+  } else if (playerSelection === "Paper" && computerSelection === "Rock") {
+    playerScore++;
+
+    return "You Win! Rock beats Paper";
+  } else if (playerSelection === "Scissors" && computerSelection === "Paper") {
+    playerScore++;
+
+    return "You Win! Scissors beat Paper";
+  } else if (
+    playerSelection === "Scissors" &&
+    computerSelection === "Scissors"
+  ) {
+    return "It's a Draw! Let's play again";
+  } else if (playerSelection === "Scissors" && computerSelection === "Rock") {
+    computerScore++;
+
+    return "You Lose! Rock beats Scissors";
+  }
+
+  return;
+}
+
+function winGame() {
+  if (playerScore === 5) {
+    return "You have reached 5 points. You Won!";
+  } else if (computerScore === 5) {
+    return "Computer have reached 5 points. You Lost!";
+  }
+}
