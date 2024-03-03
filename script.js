@@ -4,7 +4,6 @@ const btnPaper = document.createElement("button");
 const btnScissors = document.createElement("button");
 const resultDiv = document.createElement("div");
 
-//container.classList.add("container");
 container.setAttribute("id", "container");
 btnRock.setAttribute("id", "rock");
 btnPaper.setAttribute("id", "paper");
@@ -29,8 +28,6 @@ container.appendChild(btnPaper);
 container.appendChild(btnScissors);
 container.appendChild(resultDiv);
 
-//--
-
 arrayOfChoices = ["Rock", "Paper", "Scissors"];
 
 function getComputerChoice() {
@@ -41,7 +38,6 @@ function getComputerChoice() {
   return choiceOfComputer;
 }
 getComputerChoice();
-//console.log(getComputerChoice());
 
 let userScore = parseInt(0);
 let computerScore = parseInt(0);
