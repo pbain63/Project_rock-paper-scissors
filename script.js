@@ -79,9 +79,9 @@ function playRound(playerSelection, computerSelection) {
 
     return "You Win! Rock beats Scissors";
   } else if (playerSelection === "Rock" && computerSelection === "Rock") {
-    return "It's a Draw! Let's play again";
+    return "It's a Draw!";
   } else if (playerSelection === "Paper" && computerSelection === "Paper") {
-    return "It's a Draw! Let's play again";
+    return "It's a Draw!";
   } else if (playerSelection === "Paper" && computerSelection === "Scissors") {
     computerScore++;
 
@@ -89,7 +89,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection === "Paper" && computerSelection === "Rock") {
     playerScore++;
 
-    return "You Win! Rock beats Paper";
+    return "You Win! Paper beats Rock";
   } else if (playerSelection === "Scissors" && computerSelection === "Paper") {
     playerScore++;
 
@@ -98,7 +98,7 @@ function playRound(playerSelection, computerSelection) {
     playerSelection === "Scissors" &&
     computerSelection === "Scissors"
   ) {
-    return "It's a Draw! Let's play again";
+    return "It's a Draw!";
   } else if (playerSelection === "Scissors" && computerSelection === "Rock") {
     computerScore++;
 
