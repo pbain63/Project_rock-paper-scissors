@@ -25,3 +25,11 @@ container.appendChild(btnRock);
 container.appendChild(btnPaper);
 container.appendChild(btnScissors);
 container.appendChild(resultDiv);
+
+const rockClick = document.querySelector("#Rock");
+const paperClick = document.querySelector("#Paper");
+const scissorsClick = document.querySelector("#Scissors");
+
+rockClick.addEventListener("click", userChoice);
+paperClick.addEventListener("click", userChoice);
+scissorsClick.addEventListener("click", userChoice);
