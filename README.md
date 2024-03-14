@@ -1,13 +1,11 @@
-# Project_rock-paper-scissors
-The project takes input "Five" times in a "prompt()", keeps the score from the begining and shows "Your Score" and "Computer's Score". 
+# Project: rock-paper-scissors
+The project displays three buttons on the interface. By clicking on the buttons, the player plays the game with the computer. The project shows the button they choose, the running score, and the winner. The winner of the game is the one who reaches point 5 first.
 
-After entering input "Five" times, to see the result please go to your browser console. 
-
-Live Preview:
+Live Preview Link:
 
 
-https://rawcdn.githack.com/pbain63/Project_rock-paper-scissors/cfc0e26529b350ba60e4b730a39fc732d40afc6b/index.html
+https://rawcdn.githack.com/pbain63/Project_rock-paper-scissors/e74391e619afe2eb72d2d6962fc5ffdcfbd219fe/index.html
 
 
 
-Technology: HTML5, JavaScript 
+Technology: DOM, JavaScript, HTML5
