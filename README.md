@@ -4,7 +4,7 @@ The project displays three buttons on the interface. By clicking on the buttons,
 Live Preview Link:
 
 
-https://rawcdn.githack.com/pbain63/Project_rock-paper-scissors/e74391e619afe2eb72d2d6962fc5ffdcfbd219fe/index.html
+https://pbain63.github.io/Project_rock-paper-scissors/
 
 
 
