@@ -16,9 +16,9 @@ btnRock.textContent = "ROCK";
 btnPaper.textContent = "PAPER";
 btnScissors.textContent = "SCISSORS";
 
-btnRock.setAttribute("style", "margin: 10px; background-color: grey");
+btnRock.setAttribute("style", "margin: 10px; background-color: grey; color: white");
 btnPaper.setAttribute("style", "margin: 10px; background-color: ash");
-btnScissors.setAttribute("style", "margin: 10px; background-color: green");
+btnScissors.setAttribute("style", "margin: 10px; background-color: green; color: white");
 
 document.body.appendChild(container);
 container.appendChild(btnRock);
